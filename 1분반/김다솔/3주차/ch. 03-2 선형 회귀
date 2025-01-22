@@ -1,0 +1,14 @@
+## 03-2 선형 회귀
+직선을 학습하는 알고리즘!  
+[구글 코랩 코드 - 선형 회귀](https://colab.research.google.com/drive/1YaoKnXNXhhUKCr8gSc0Ii3OkvasZO2hX?usp=sharing)   
+선형회귀는 한계가 있기 때문에 이를 다항 회귀로 바꾸려고 함.
+(무슨 한계?
+물고기 길이를 기반으로 무게를 예측하는 모델을 만든다고 할 때 무게가 마이너스는 될 수 없기 때문이다.
+
+## 03-3 특성 공학과 규제
+[구글 코랩 코드 - 특성 공학과 규제](https://colab.research.google.com/drive/18Yt1VrG6UTAkqU6xAMNxPicaLAqavM_r?usp=sharing)   
+### 규제
+- **릿지**: 계수를 제곱한 값을 기준으로 규제를 적용
+- 라쏘: 계수의 절대값을 기준으로 규제를 적용
+alpha 값이 커지면 규제 강도가 세지므로 계수 값을 더 줄이고 조금 더 과소적합 되도록 함.
+이와 반대로 alpha 값이 작으면 계수를 줄이는 역할이 줄어들고 선형 회귀 모델과 유사해지므로 과대적합될 가능성이 큼.
